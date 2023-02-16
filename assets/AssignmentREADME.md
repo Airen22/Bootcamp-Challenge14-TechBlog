@@ -21,83 +21,85 @@ GIVEN a CMS-style blog site
 
 WHEN I visit the site for the first time
 THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
-> Landing page is homepage, includes:
->    - nav bar with:
->        - homepage
->        - dashboard
->        - login
->    - existing blog posts
+> [x] Landing page is homepage, includes:
+> [x]  + nav bar with:
+> [x]   - homepage
+> [x]   - dashboard
+> [x]   - login
+> [x]  + existing blog posts
 
 WHEN I click on the homepage option
 THEN I am taken to the homepage
-> '/' routes to homepage
+> [x] '/' routes to homepage
 
 WHEN I click on any other links in the navigation
 THEN I am prompted to either sign up or sign in
-> all links check if loggedIn and then lead to signup/signin page 
+> [x] all links check if loggedIn and then lead to signup/signin page 
 
 WHEN I choose to sign up
 THEN I am prompted to create a username and password
-> form submission
+> [x] form submission
 
 WHEN I click on the sign-up button
 THEN my user credentials are saved and I am logged into the site
-> updates user db then goes to homepage
+> [x] updates user db then goes to profile
 
 WHEN I revisit the site at a later time and choose to sign in
 THEN I am prompted to enter my username and password
-> remove login cookies
+> [x] remove login cookies
 
 WHEN I am signed in to the site
 THEN I see navigation links for the homepage, the dashboard, and the option to log out
-> show nav bar with 
->    - homepage
->    - dashboard
->    - logout
+> [x] show nav bar with 
+> [x]  + homepage
+> [x]  + dashboard
+> [x]  + logout
 
 WHEN I click on the homepage option in the navigation
 THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
-> homepage shows existing blog posts (w/ title and date created)
+> [x] homepage shows existing blog posts (w/ title and date created)
 
 WHEN I click on an existing blog post
 THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
-> entire blog post is an <a>? includes:
->    - title
->    - contents
->    - creator's username
->    - date created 
->    - <input> comment space ? w <button> submit
+> [x] entire blog post is an <a>? includes:
+> [x]  + title
+> [x]  + contents
+> [x]  + creator's username
+> [x]  + date created 
+> [x]  + <input> comment space ? w <button> submit
 
 WHEN I enter a comment and click on the submit button while signed in
 THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-> on submit add to comment db, and display:
->    - comment
->    - creator
->    - date created
+> [] on submit add to comment db, and display:
+> []  + comment
+> []  + creator
+> []  + date created
 
 WHEN I click on the dashboard option in the navigation
 THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
-> dashboard page displays users blog posts and <button> new post
+> [x] dashboard page displays users blog posts and <button> new post
 
 WHEN I click on the button to add a new blog post
 THEN I am prompted to enter both a title and contents for my blog post
-> form w <input> for title and <input> for contents <button> for submit
+> [] form w <input> for title and <input> for contents <button> for submit
 
 WHEN I click on the button to create a new blog post
 THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-> on button click go to /dashboard 
+> [] on button click go to /dashboard 
 
 WHEN I click on one of my existing posts in the dashboard
 THEN I am able to delete or update my post and taken back to an updated dashboard
-> all posts are <button>? on click add <button> delete <edit> button 
+> [] all posts are <button>? on click add
+> []  + <button> delete 
+> []  + <button> edit 
 
 WHEN I click on the logout option in the navigation
 THEN I am signed out of the site
-> return to original landing page 
+> [x] return to original landing page 
 
 WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
-> add timeout on login to return to landing page
+> [x] add timeout on login to return to landing page
 ```
 
 ## Mock-Up

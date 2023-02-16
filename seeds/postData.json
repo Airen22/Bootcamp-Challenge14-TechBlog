@@ -1,0 +1,22 @@
+[
+    {
+        "title": "HTML",
+        "post_content": "this is a post about HTML"
+    },
+    {
+        "title": "CSS",
+        "post_content": "this is a post about CSS"
+    },
+    {
+        "title": "JavaScript",
+        "post_content": "this is a post about JavaScript"
+    },
+    {
+        "title": "Object Oriented Programming",
+        "post_content": "this is a post about OOP"
+    },
+    {
+        "title": "Model-View-Controller Programming",
+        "post_content": "this is a post about MVC"
+    }
+]

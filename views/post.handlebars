@@ -2,6 +2,13 @@
   <h2>{{title}}</h2>
   <p>{{post_content}}</p>
   <p>Created by {{user.username}} on {{format_date date_created}}</p>
+  </div>
+  {{#if comment.length}}
+  <div class = "comments">
+{{> comment}}
+
+  </div>
+  {{/if}}
   {{#if logged_in}}
   <form class="form comment-form">
     <div class="form-group">
@@ -11,6 +18,9 @@
     <div class="form-group">
       <button class="btn btn-primary" type="submit">Submit</button>
     </div>
+    </form>
     {{/if}}
-</div>
+
+    <script src="./js/post.js"></script>
+
 

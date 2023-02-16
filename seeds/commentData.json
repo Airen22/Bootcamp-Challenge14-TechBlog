@@ -1,0 +1,32 @@
+[
+    {
+        "comment_content": "totally agree!",
+        "user_id": 2,
+        "post_id": 3
+    },
+    {
+        "comment_content": "power through it will make more sense in the future",
+        "user_id": 3,
+        "post_id": 1
+    },
+    {
+        "comment_content": "this is the building block for more advanced programming",
+        "user_id": 3,
+        "post_id": 2
+    },
+    {
+        "comment_content": "pay attention to syntax",
+        "user_id": 1,
+        "post_id": 2
+    },
+    {
+        "comment_content": "i loved learing this",
+        "user_id": 1,
+        "post_id": 3
+    },
+    {
+        "comment_content": "still trying to get the hang of this :/",
+        "user_id": 2,
+        "post_id": 3
+    }
+]

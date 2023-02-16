@@ -1,22 +1,27 @@
 [
     {
         "title": "HTML",
-        "post_content": "this is a post about HTML"
+        "post_content": "this is a post about HTML",
+        "user_id" : 1
     },
     {
         "title": "CSS",
-        "post_content": "this is a post about CSS"
+        "post_content": "this is a post about CSS",
+        "user_id" : 2
     },
     {
         "title": "JavaScript",
-        "post_content": "this is a post about JavaScript"
+        "post_content": "this is a post about JavaScript",
+        "user_id" : 3
     },
     {
         "title": "Object Oriented Programming",
-        "post_content": "this is a post about OOP"
+        "post_content": "this is a post about OOP",
+        "user_id" : 2
     },
     {
         "title": "Model-View-Controller Programming",
-        "post_content": "this is a post about MVC"
+        "post_content": "this is a post about MVC",
+        "user_id" : 1
     }
 ]

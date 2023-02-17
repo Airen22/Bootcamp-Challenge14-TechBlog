@@ -1,4 +1,4 @@
-const newFormHandler = async (event) => {
+const newPostFormHandler = async (event) => {
     event.preventDefault();
   
     const title = document.querySelector('#post-name').value.trim();
@@ -21,11 +21,7 @@ const newFormHandler = async (event) => {
     }
   };
 
-  document
-  .querySelector('.new-post-form')
-  .addEventListener('submit', newFormHandler);
-
-  const delButtonHandler = async (event) => {
+  const delPostButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
@@ -42,5 +38,9 @@ const newFormHandler = async (event) => {
   };
 
   document
+  .querySelector('.new-post-form')
+  .addEventListener('submit', newPostFormHandler);
+
+  document
   .querySelector('.post-list')
-  .addEventListener('click', delButtonHandler);
+  .addEventListener('click', delPostButtonHandler);

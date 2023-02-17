@@ -1,18 +1,11 @@
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4>Comments:</h4>
-      </div>
-      {{#each comments as |comment|}}
-      <div class = "comment">
-        <h5>{{comment.content}}</h5>
-        <P>-{{comment.user_id.name}}, {{comment.date_created}}</P>
-      </div>
-{{#if logged_in}}
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{commment.id}}">Edit</button>
-      </div>
+<div class="row mb-2">
+  <div class="col-md-8">
+    <h4>Comments:</h4>
+  </div>
+  <div class="row mb-4 comment">
+    <div class="col-md-7">
+      <p class="comment-content">{{comment_content}}</p>
+      <p>Created by {{user.username}} on {{format_date date_created}}</p>
     </div>
-    {{/if}}
-    {{/each}}
-
-    
+  </div>
+</div>

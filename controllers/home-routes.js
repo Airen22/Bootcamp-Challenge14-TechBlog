@@ -31,19 +31,13 @@ router.get('/post/:id', async (req, res) => {
     const postData = await Post.findByPk(req.params.id, {
       include: [
         {
-          model: Comment,
-          include: {User, 
-          attributes: ['username']
-        }
+          model: User,
+          attributes: ['username'],
         },
         {
-          model: User,
-          attributes: ['username']
+          model: Comment,
+          include: [User],
         }
-        // {
-        //   model: Comment,
-        //   attributes: ['username', 'date_created'],
-        // },
       ],
     });
 
@@ -51,7 +45,7 @@ router.get('/post/:id', async (req, res) => {
 
     res.render('post', {
       ...post, 
-      logged_in: req.session.logged_in
+      // logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
@@ -76,7 +70,6 @@ router.get('/profile', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route

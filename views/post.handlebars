@@ -19,12 +19,12 @@
 <script src="/js/comment.js"></script>
 {{/if}}
 
-{{#if comment.length}}
+{{#if comments.length}}
 <div id="post-comments">
   <h4>Comments:</h4>
   {{#each comments as |comment|}}
-  <h4>{{comment.comment_content}}</h4>
-  <p>-{{comment.user.username}}, {{format_date comment.date_created}}</p>
+  <h4>{{comment_content}}</h4>
+  <p>-{{user.username}}, {{format_date date_created}}</p>
 {{/each}}
 </div>
 {{/if}}

@@ -40,25 +40,26 @@ const newPostFormHandler = async (event) => {
   const editPostButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
-      fetch(`/api/posts/${id}`, {
-              method: 'GET',
-            }).then(data => {
-              data.json()
-            }).then(res => {
-              console.log(res)
-            })
-  //     const response = await fetch(`/api/posts/${id}`, {
-  //       method: 'GET',
-  //     });
 
-  // console.log(document.querySelector("#post-name").value=response.title)
-  //     if (response.ok) {
-  //       document.querySelector("#post-name").value=`${post.title}}`
-  //     } else {
-  //       alert('Failed to edit post');
-  //     }
+      const response = await fetch(`/api/posts/${id}`, {
+        method: 'GET',
+      });
+
+  console.log(document.querySelector("#post-name").value=response.title)
+      if (response.ok) {
+        document.querySelector("#post-name").value=`${post.title}}`
+      } else {
+        alert('Failed to edit post');
+      }
     }
   };
+  // fetch(`/api/posts/${id}`, {
+      //         method: 'GET',
+      //       }).then(data => {
+      //         data.json()
+      //       }).then(res => {
+      //         console.log(res)
+      //       })
   document
   .querySelector('.new-post-form')
   .addEventListener('submit', newPostFormHandler);

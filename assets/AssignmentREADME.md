@@ -70,10 +70,10 @@ THEN I am presented with the post title, contents, post creator’s username, an
 
 WHEN I enter a comment and click on the submit button while signed in
 THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
-> [] on submit add to comment db, and display:
-> []  + comment
-> []  + creator
-> []  + date created
+> [x] on submit add to comment db, and display:
+> [x]  + comment
+> [x]  + creator
+> [x]  + date created
 
 WHEN I click on the dashboard option in the navigation
 THEN I am taken to the dashboard and presented with any blog posts I have already created and the option to add a new blog post
@@ -81,16 +81,16 @@ THEN I am taken to the dashboard and presented with any blog posts I have alread
 
 WHEN I click on the button to add a new blog post
 THEN I am prompted to enter both a title and contents for my blog post
-> [] form w <input> for title and <input> for contents <button> for submit
+> [x] form w <input> for title and <input> for contents <button> for submit
 
 WHEN I click on the button to create a new blog post
 THEN the title and contents of my post are saved and I am taken back to an updated dashboard with my new blog post
-> [] on button click go to /dashboard 
+> [x] on button click go to /dashboard 
 
 WHEN I click on one of my existing posts in the dashboard
 THEN I am able to delete or update my post and taken back to an updated dashboard
 > [] all posts are <button>? on click add
-> []  + <button> delete 
+> [x]  + <button> delete 
 > []  + <button> edit 
 
 WHEN I click on the logout option in the navigation

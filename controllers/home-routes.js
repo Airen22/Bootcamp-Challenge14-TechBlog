@@ -52,6 +52,12 @@ console.log(post);
   }
 });
 
+router.get('/edit/:id', withAuth, async (req, res) => {
+  if (req.session.logged_in) {
+  res.render('edit');
+  }
+});
+
 router.get('/profile', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
@@ -70,7 +76,6 @@ router.get('/profile', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
 
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route

@@ -11,16 +11,16 @@ https://tech-blog22.herokuapp.com/
 
 The following image shows an example of the Tech Blog app homepage:
 
-![](./images/image1.jpg)
+![](./assets/images/image1.jpg)
 
 The following image shows an example of the Tech Blog login page with the option to signup
-![](./images/image2.jpg)
+![](./assets/images/image2.jpg)
 
 The following image shows an example of the Tech Blog dashboard page where logged in users can create new blog posts or eidt and delete thier previous posts
-![](./images/image3.jpg)
+![](./assets/images/image3.jpg)
 
 The following image shows an example of an indiividual pos, when logged in users can add their own posts
-![](./images/image4.jpg)
+![](./assets/images/image4.jpg)
 
 ## Installation
 

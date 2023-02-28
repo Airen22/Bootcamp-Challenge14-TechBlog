@@ -35,6 +35,7 @@ They will also be able to ineract with other users' posts by adding comments.
 ## Credits
 
 Karen Peazzoni: https://github.com/kpeazzoni/
+
 Inspired by and based off of UTA Bootcamp Fund My Project
 
 ## License
